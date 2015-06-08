@@ -1,8 +1,45 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Book.ttf') format('truetype'), url('../fonts/Gotham-Book.eot?#iefix') format('embedded-opentype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-BookItalic.ttf') format('truetype');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Medium.ttf') format('truetype'), url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype');
+    font-weight:400;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Bold.ttf') format('truetype'), url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: 600;
+}
+body{
+    font-family: 'Gotham';
+  font-size: 13px;
+  font-weight: 300;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
 .menu ul li,
 .arch {
-    margin-top: 50px;
-    padding: 0 30px;
-    font-size: 20px;
+    margin:28px 0;
+    padding: 0 40px;
+    font-size: 16px;
+    font-family: 'Gotham';
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
+.navbar ul li a{
+    padding: 0;
 }
 
 .pos {
@@ -79,6 +116,7 @@
 
 .carousel-inner .imgbdr {
     border: 1px solid black;
+    margin:5px 0;
 }
 
 .carousel-control.left,
@@ -96,10 +134,24 @@ span.glyphicon.glyphicon-chevron-right {
     color: black;
 }
 
+
 .ftrbg {
-    background: grey;
+    background: #3A5A87;
     color: white;
     padding: 30px;
+}
+.ftrbg ul li{
+    margin: 0 auto;
+  width: 40%;
+    text-align: left;
+    padding: 10px 0;
+}
+.ftrbg ul li a{
+    color: white;
+}
+.ftrbg ul li a:hover{
+    color: white;
+    text-decoration: none;
 }
 
 .margin0 {
@@ -116,8 +168,8 @@ span.glyphicon.glyphicon-chevron-right {
 }
 
 .even h2 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .socialbox {
@@ -142,7 +194,7 @@ span.glyphicon.glyphicon-chevron-right {
 .logoimg {
     width: 60%;
     height: auto;
-    padding: 20px;
+    margin:15px 0;
 }
 
 .eventimg {
@@ -190,4 +242,22 @@ span.glyphicon.glyphicon-chevron-right {
 
 .mt30 {
     margin-top: 30px;
+}
+.carousel-caption{
+    padding-bottom: 0;
+}
+.carousel-caption a{
+    text-decoration: none;
+    color:black;
+}
+/*
+div#bs-example-navbar-collapse-1{
+    background-color: white;
+}*/
+.navbar-default{
+    background-color: white;
+    border-color: white;
+}
+.carousel-inner .item .wrap-event{
+    margin:5px 0;
 }
